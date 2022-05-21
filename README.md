@@ -1,6 +1,8 @@
 # PyTorch on Apple Silicon
 
-TK - who is this for?
+**You:** have a new Apple Silicon Mac (M1, M1 Pro, M1 Max, M1 Ultra) and would like to get started doing machine learning and data science on it.
+
+**This repo:** Contains steps to install the most common Python data science and machine learning packages (with a focus on PyTorch) on your machine and makes sure they run using sample code.
 
 ## Setup a machine learning environment with PyTorch on Mac (short version) 
 
@@ -10,6 +12,10 @@ TK - who is this for?
 **Requirements:**
 * Apple Silicon Mac (M1, M1 Pro, M1 Max, M1 Ultra, etc).
 * macOS 12.3+ (PyTorch will work on previous versions but the GPU on your Mac won't get used, this means slower code).
+
+**What you'll finish with:**
+
+An environment ready to code with various data science and machine learning packages, including a version of PyTorch that's able to use your Mac's GPU for (hopefully) faster computing.
 
 ### Steps
 
@@ -119,10 +125,12 @@ tensor([[2.6020e-01, 9.6467e-01, 7.5282e-01, 1.8063e-01],
 
 Congratulations! Your Apple Silicon device is now running PyTorch + a handful of other helpful data science and machine learning libraries.
 
-## TODO
-* setup an experiment to run and benchmark a Mac using CPU vs GPU with PyTorch (log the time differences) - this should output a graph with CPU time vs GPU time
-* show how to send data/model's to MPS device (if it's available)
+## TK Results
 
-## Results
+If you like, you can try to run the example notebook [`01_cifar10_tinyvgg.ipynb`](01_cifar10_tinyvgg.ipynb) to see how your machine goes running PyTorch code on the Apple Silicon CPU versus the GPU.
+
+TODO Here are my results on my 14-inch M1 Pro MacBook Pro:
+
+TODO results image
 
 ![]("results/apple_m1_pro_TinyVGG_cifar10.png")
