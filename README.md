@@ -87,3 +87,19 @@ Is MPS (Metal Performance Shader) built? True
 Is MPS available? True
 Using device: mps
 ```
+
+11. To send data/models to the `"mps"` device, use `.to("mps")`.
+
+```python
+import torch
+
+# Set the device
+device = "mps" if torch.backends.mps.is_available() else "cpu"
+
+# Create data and send it to the device
+x = torch.rand(size=(3, 4)).to(device)
+```
+
+## TODO
+* setup an experiment to run and benchmark a Mac using CPU vs GPU with PyTorch (log the time differences) - this should output a graph with CPU time vs GPU time
+* show how to send data/model's to MPS device (if it's available)
