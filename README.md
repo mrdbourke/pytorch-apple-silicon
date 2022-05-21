@@ -103,3 +103,7 @@ x = torch.rand(size=(3, 4)).to(device)
 ## TODO
 * setup an experiment to run and benchmark a Mac using CPU vs GPU with PyTorch (log the time differences) - this should output a graph with CPU time vs GPU time
 * show how to send data/model's to MPS device (if it's available)
+
+## Results
+
+![]("results/apple_m1_pro_TinyVGG_cifar10.png")
