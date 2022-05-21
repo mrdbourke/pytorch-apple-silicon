@@ -23,11 +23,11 @@ source ~/miniforge3/bin/activate
 ```
 
 4. Restart terminal.
-5. Create a directory to setup TensorFlow environment.
+5. Create a directory to setup PyTorch environment.
 
 ```other
-mkdir tensorflow-test
-cd tensorflow-test
+mkdir pytorch-test
+cd pytorch-test
 ```
 
 6. Make and activate Conda environment. **Note:** Python 3.8 is the most stable for using the following setup.
