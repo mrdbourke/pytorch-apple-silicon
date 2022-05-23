@@ -85,7 +85,6 @@ device = "mps" if torch.backends.mps.is_available() else "cpu"
 print(f"Using device: {device}")
 ```
 
-
 If it all worked, you should see something like:
 
 ```other
@@ -121,9 +120,19 @@ tensor([[2.6020e-01, 9.6467e-01, 7.5282e-01, 1.8063e-01],
 
 Congratulations! Your Apple Silicon device is now running PyTorch + a handful of other helpful data science and machine learning libraries.
 
-## TODO Results
+## Results
 
-![]("results/apple_m1_pro_TinyVGG_cifar10.png")
+**Last update:** 23 May 2022
+
+Benchmark results were gathered with the notebook [`00_cifar10_tinyvgg.ipynb`](https://github.com/mrdbourke/pytorch-apple-silicon/blob/main/01_cifar10_tinyvgg.ipynb).
+
+Running TinyVGG on CIFAR10 dataset with batch size 32 and image size 32*32:
+
+![results for running PyTorch on Apple M1 Pro with TinyVGG and CIFAR10]("https://raw.githubusercontent.com/mrdbourke/pytorch-apple-silicon/main/results/TinyVGG_cifar10_benchmark_with_batch_size_32_image_size_32.png")
+
+Running TinyVGG on CIFAR10 dataset with batch size 32 and image size 224*224:
+
+![]
 
 ## How to setup a PyTorch environment on Apple Silicon using Miniforge (longer version)
 
@@ -318,6 +327,4 @@ tensor([[2.6020e-01, 9.6467e-01, 7.5282e-01, 1.8063e-01],
 
 Congratulations! Your Apple Silicon device is now running PyTorch + a handful of other helpful data science and machine learning libraries.
 
-14. To see if it really worked, try running one of the notebooks above end to end!
-
-And then compare your results to the benchmarks above.
+15. To see if it really worked, try running one of the notebooks above end to end!
