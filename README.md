@@ -1,6 +1,8 @@
 # PyTorch on Apple Silicon
 
-TK - who is this for?
+**You:** Have an Apple Silicon Mac (M1, M1 Pro, M1 Max, M1 Ultra) and would like to set it up for data science and machine learning.
+
+**This repo:** Helps you install various software tools such as Homebrew and Miniforge3 to use to install various data science and machine learning tools such as PyTorch. We'll also be getting PyTorch to run on the Apple Silicon GPU for (hopefully) faster computing.
 
 ## Setup a machine learning environment with PyTorch on Mac (short version) 
 
