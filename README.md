@@ -128,11 +128,11 @@ Benchmark results were gathered with the notebook [`00_cifar10_tinyvgg.ipynb`](h
 
 Running TinyVGG on CIFAR10 dataset with batch size 32 and image size 32*32:
 
-![results for running PyTorch on Apple M1 Pro with TinyVGG and CIFAR10 with image size 32x32]("https://raw.githubusercontent.com/mrdbourke/pytorch-apple-silicon/main/results/TinyVGG_cifar10_benchmark_with_batch_size_32_image_size_32.png")
+![results for running PyTorch on Apple M1 Pro with TinyVGG and CIFAR10 with image size 32x32](https://raw.githubusercontent.com/mrdbourke/pytorch-apple-silicon/main/results/TinyVGG_cifar10_benchmark_with_batch_size_32_image_size_32.png)
 
 Running TinyVGG on CIFAR10 dataset with batch size 32 and image size 224*224:
 
-![results for running PyTorch on Apple M1 Pro with TinyVGG and CIFAR10 with image size 224x224]("https://raw.githubusercontent.com/mrdbourke/pytorch-apple-silicon/main/results/TinyVGG_cifar10_benchmark_with_batch_size_32_image_size_224.png")
+![results for running PyTorch on Apple M1 Pro with TinyVGG and CIFAR10 with image size 224x224](https://raw.githubusercontent.com/mrdbourke/pytorch-apple-silicon/main/results/TinyVGG_cifar10_benchmark_with_batch_size_32_image_size_224.png)
 
 Looks like the `"mps"` device shines when the GPU is getting utilized more. However, since accelerated PyTorch for Mac is still in beta, I'm sure there's room for improvement.
 
