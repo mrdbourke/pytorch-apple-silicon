@@ -1,2 +1,2 @@
 machine,device,dataset_name,epochs,batch_size,image_size,num_train_samples,num_test_samples,total_train_time,time_per_epoch,model
-Apple M1 Pro,cpu,cifar10,3,32,224,50000,10000,1553.717,517.906,TinyVGG
+Apple M1 Pro,cpu,cifar10,3,32,224,50000,10000,2986.332,995.444,TinyVGG
