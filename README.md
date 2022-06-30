@@ -1,6 +1,6 @@
 # PyTorch on Apple Silicon
 
-**You:** Have an Apple Silicon Mac (M1, M1 Pro, M1 Max, M1 Ultra) and would like to set it up for data science and machine learning.
+**You:** Have an Apple Silicon Mac (M1, M2, M1 Pro, M1 Max, M1 Ultra) and would like to set it up for data science and machine learning.
 
 **This repo:** Helps you install various software tools such as Homebrew and Miniforge3 to use to install various data science and machine learning tools such as PyTorch. We'll also be getting PyTorch to run on the Apple Silicon GPU for (hopefully) faster computing.
 
@@ -10,13 +10,13 @@
 > As of June 30 2022, accelerated PyTorch for Mac (PyTorch using the Apple Silicon GPU) is still in beta, so expect some rough edges.
 
 **Requirements:**
-* Apple Silicon Mac (M1, M1 Pro, M1 Max, M1 Ultra, etc).
+* Apple Silicon Mac (M1, M2, M1 Pro, M1 Max, M1 Ultra, etc).
 * macOS 12.3+ (PyTorch will work on previous versions but the GPU on your Mac won't get used, this means slower code).
 
 ### Steps
 
 1. Download and install Homebrew from [https://brew.sh](https://brew.sh). Follow the steps it prompts you to go through after installation.
-2. [Download Miniforge3](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh) (Conda installer) for macOS arm64 chips (M1, M1 Pro, M1 Max, M1 Ultra).
+2. [Download Miniforge3](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh) (Conda installer) for macOS arm64 chips (M1, M2, M1 Pro, M1 Max, M1 Ultra).
 3. Install Miniforge3 into home directory.
 
 ```other
