@@ -7,7 +7,7 @@
 ## Setup a machine learning environment with PyTorch on Mac (short version) 
 
 > **Note:** 
-> As of May 21 2022, accelerated PyTorch for Mac (PyTorch using the Apple Silicon GPU) is still in beta, so expect some rough edges.
+> As of June 30 2022, accelerated PyTorch for Mac (PyTorch using the Apple Silicon GPU) is still in beta, so expect some rough edges.
 
 **Requirements:**
 * Apple Silicon Mac (M1, M1 Pro, M1 Max, M1 Ultra, etc).
@@ -43,11 +43,11 @@ conda create --prefix ./env python=3.8
 conda activate ./env
 ```
 
-7. Install the PyTorch nightly version for Mac with pip from the [PyTorch getting started page](https://pytorch.org/get-started/locally/). 
+7. Install the PyTorch 1.12.0+ default version for Mac with pip from the [PyTorch getting started page](https://pytorch.org/get-started/locally/). 
 
 
 ```other
-pip3 install --pre torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/cpu
+pip3 install torch torchvision torchaudio
 ```
 
 This will install the following: 
@@ -88,7 +88,7 @@ print(f"Using device: {device}")
 If it all worked, you should see something like:
 
 ```other
-PyTorch version: 1.12.0.dev20220519
+PyTorch version: 1.12.0
 Is MPS (Metal Performance Shader) built? True
 Is MPS available? True
 Using device: mps
@@ -245,16 +245,13 @@ If activating your environment went correctly, your terminal window prompt shoul
 
 11. Now we've got a Conda environment setup, it's time to install the software we need.
 
-Let's start by installing the nightly version of PyTorch for Mac from the [PyTorch install page](https://pytorch.org/get-started/locally/).
+Let's start by installing the PyTorch 1.12.0+ (v1.12.0+ is required for GPU acceleration) for Mac from the [PyTorch install page](https://pytorch.org/get-started/locally/).
 
 > **Note:** 
-> As of May 21 2022, accelerated PyTorch for Mac (PyTorch using the Apple Silicon GPU) is still in beta, so expect some rough edges.
 
 ```bash
-pip3 install --pre torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/cpu
+pip3 install torch torchvision torchaudio
 ```
-
-The above stands for "hey pip install all of the PyTorch and torch dependencies from the nightly PyTorch channel".
 
 If it worked, you should see a bunch of stuff being downloaded and installed for you. 
 
@@ -297,7 +294,7 @@ print(f"Using device: {device}")
 If it all worked, you should see something like:
 
 ```other
-PyTorch version: 1.12.0.dev20220519
+PyTorch version: 1.12.0
 Is MPS (Metal Performance Shader) built? True
 Is MPS available? True
 Using device: mps
