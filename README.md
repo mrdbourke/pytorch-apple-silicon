@@ -4,9 +4,16 @@
 
 **This repo:** Helps you install various software tools such as Homebrew and Miniforge3 to use to install various data science and machine learning tools such as PyTorch. We'll also be getting PyTorch to run on the Apple Silicon GPU for (hopefully) faster computing.
 
+## Helpful links
+
+* 👨‍💻 "I'm comfortable with using a terminal", see the [short version](https://github.com/mrdbourke/pytorch-apple-silicon#setup-a-machine-learning-environment-with-pytorch-on-mac-short-version).
+* 🤔 "I'm new to ML/Macs/coding", see the [longer version](https://github.com/mrdbourke/pytorch-apple-silicon#how-to-setup-a-pytorch-environment-on-apple-silicon-using-miniforge-longer-version).
+* 🎥 Watch the [video step-by-step](https://youtu.be/Zx2MHdRgAIc) through on YouTube.
+
 ## Setup a machine learning environment with PyTorch on Mac (short version) 
 
 > **Note:** 
+> As of March 2023, PyTorch 2.0 is out and that brings a bunch of updates to PyTorch for Apple Silicon (though still not perfect).
 > As of June 30 2022, accelerated PyTorch for Mac (PyTorch using the Apple Silicon GPU) is still in beta, so expect some rough edges.
 
 **Requirements:**
